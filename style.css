@@ -1,9 +1,5 @@
 body {
-  background: #000;
-}
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  font-family: "Arial Regular", sans-serif;
+  counter-reset: tenBatKy;
 }
 
 /**
@@ -404,6 +400,49 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   overflow: hidden;
 }
 
+.item-8px:nth-child(n+2) {
+  margin-top: 0.5rem;
+}
+
+.item-9px:nth-child(n+2) {
+  margin-top: 0.5625rem;
+}
+
+.item-12px:nth-child(n+2) {
+  margin-top: 0.75rem;
+}
+
+.item-18px:nth-child(n+2) {
+  margin-top: 1.125rem;
+}
+
+.item-24px:nth-child(n+2) {
+  margin-top: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  .item-24px:nth-child(n+2) {
+    margin-top: 1.5rem;
+  }
+}
+
+.item-41px:nth-child(n+2) {
+  margin-top: calc(1.38125rem + 1.575vw);
+}
+@media (min-width: 1200px) {
+  .item-41px:nth-child(n+2) {
+    margin-top: 2.5625rem;
+  }
+}
+
+.item-47px:nth-child(n+2) {
+  margin-top: calc(1.41875rem + 2.025vw);
+}
+@media (min-width: 1200px) {
+  .item-47px:nth-child(n+2) {
+    margin-top: 2.9375rem;
+  }
+}
+
 .item-50px:nth-child(n+2) {
   margin-top: calc(1.4375rem + 2.25vw);
 }
@@ -422,6 +461,30 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 
+.item-161px:nth-child(n+2) {
+  margin-top: calc(2.13125rem + 10.575vw);
+}
+@media (min-width: 1200px) {
+  .item-161px:nth-child(n+2) {
+    margin-top: 10.0625rem;
+  }
+}
+
+.width-445px {
+  max-width: 100%;
+  width: 445px;
+}
+
+.width-540px {
+  max-width: 100%;
+  width: 540px;
+}
+
+.width-570px {
+  max-width: 100%;
+  width: 570px;
+}
+
 .width-810px {
   max-width: 100%;
   width: 810px;
@@ -435,6 +498,183 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .width-1364px {
   max-width: 100%;
   width: 1364px;
+}
+
+.header:not(.uk-navbar-transparent) {
+  background: #fff;
+}
+.header__item, .header .uk-navbar-nav > li > a, .header .uk-navbar-item, .header .uk-navbar-toggle {
+  min-height: 65px;
+}
+.header__hover, .header .uk-navbar-nav > li:hover > a, .header .uk-navbar-nav > li > a[aria-expanded=true] {
+  color: #666;
+}
+.header__active, .header .uk-navbar-nav > li.uk-active > a {
+  color: var(--cam, #F78924);
+  font-family: "Be Vietnam Bold", sans-serif;
+}
+.header__btn {
+  text-transform: inherit;
+  border-color: #F78924;
+  font-size: 14px;
+  color: #F78924;
+}
+.header .uk-navbar-nav > li > a {
+  font-size: 15px;
+  text-transform: inherit;
+  color: #525252;
+}
+.home__txt1 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--tm, #7A1FC1);
+}
+.home__table tr th, .home__table tr td {
+  border: 1px solid #D0ADEB;
+  color: var(--tm, #7A1FC1);
+  text-align: center;
+}
+.home__table thead tr th {
+  text-transform: inherit;
+  font-weight: 700 !important;
+  background: var(--tm-nht, #F6EAFF);
+}
+.home__note {
+  color: var(--cam, #F78924);
+  font-size: 1.0625rem;
+  font-family: "Be Vietnam Bold", sans-serif;
+}
+.home__list > li:nth-child(n+2) {
+  margin-top: 0;
+}
+.home__bg {
+  background-color: rgba(246, 234, 255, 0.5);
+}
+.home__accordion__li {
+  border-radius: 8px;
+  background: var(--trng, #FFF);
+  padding: 15px 20px;
+  padding-right: 10px;
+}
+.home__accordion__title {
+  color: var(--tm, #7A1FC1);
+  font-size: 16px;
+}
+.home__zaloTxt {
+  color: var(--cam, #F78924);
+  font-size: 1.25rem;
+}
+.home__form__input {
+  font-size: 15px;
+  border-radius: 8px;
+}
+.home__form__btn {
+  background: var(--cam, #F78924) !important;
+  font-size: 1.25rem;
+  text-transform: inherit;
+  border-radius: 8px;
+}
+.home__location__box {
+  padding-left: 100px;
+  position: relative;
+}
+.home__location__box:before {
+  counter-increment: tenBatKy;
+  content: "0" counter(tenBatKy) ".";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--cam, #F78924);
+  font-size: calc(1.425rem + 2.1vw);
+  line-height: 0.45;
+}
+@media (min-width: 1200px) {
+  .home__location__box:before {
+    font-size: 3rem;
+  }
+}
+.home__coverImg1:nth-child(1) {
+  position: absolute;
+  top: 256px;
+  left: 0;
+}
+.home__coverImg1:nth-child(2) {
+  position: absolute;
+  top: 558px;
+  right: 0;
+}
+.home__footer__title {
+  font-size: 16px;
+  color: var(--cam, #F78924);
+}
+.home__baogom__section {
+  position: relative;
+}
+.home__baogom__section:before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  right: -30%;
+  background: var(--cam-nhatj, #FFEDDD);
+}
+.home__baogom__coverTop {
+  margin-top: -50px;
+  border-radius: 24px;
+}
+.home__baogom__cover1 {
+  margin-top: -60px;
+  margin-left: -100px;
+  border-radius: 24px;
+}
+.home__dichvu__section {
+  position: relative;
+}
+.home__dichvu__section:before {
+  content: "";
+  min-height: 557px;
+  width: 100vw;
+  background: var(--tm-nht, #F6EAFF);
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+.home__khachhang__section {
+  position: relative;
+}
+.home__khachhang__section:before {
+  content: "";
+  min-height: 550px;
+  width: 100vw;
+  background: var(--tm-nht, #F6EAFF);
+  position: absolute;
+  top: 0;
+  right: 30%;
+}
+.home__khachhang__title1 {
+  color: var(--en, #2D2D2D);
+  font-size: calc(1.425rem + 2.1vw);
+}
+@media (min-width: 1200px) {
+  .home__khachhang__title1 {
+    font-size: 3rem;
+  }
+}
+.home__khachhang__txt {
+  font-size: 15px;
+}
+.home__khachhang__name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.bungee-inline-regular, .home__location__box:before {
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

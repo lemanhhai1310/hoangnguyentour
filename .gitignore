@@ -1,6 +1,7 @@
 # macOS Files
 .DS_Store
 .idea
+assets/uikit/node_modules
 
 #style.scss
 #style.css

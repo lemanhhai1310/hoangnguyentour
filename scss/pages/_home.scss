@@ -1,0 +1,191 @@
+.home{
+  &__txt1{
+    font-family: "Inter", sans-serif;
+    @include font-size(20px);
+    font-weight: 700;
+    color: var(--tm, #7A1FC1);
+  }
+  &__table{
+    tr{
+      th,td{
+        border: 1px solid #D0ADEB;
+        color: var(--tm, #7A1FC1);
+        text-align: center;
+      }
+    }
+    thead{
+      tr{
+        th{
+          text-transform: inherit;
+          font-weight: 700 !important;
+          background: var(--tm-nht, #F6EAFF);
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+
+        }
+      }
+    }
+  }
+  &__note{
+    color: var(--cam, #F78924);
+    @include font-size(17px);
+    font-family: 'Be Vietnam Bold', sans-serif;
+  }
+  &__list{
+    >li{
+      &:nth-child(n+2){
+        margin-top: 0;
+      }
+    }
+  }
+  &__bg{
+    background-color: rgba(#F6EAFF,.5);
+  }
+  &__accordion{
+    &__li{
+      border-radius: 8px;
+      background: var(--trng, #FFF);
+      padding: 15px 20px;
+      padding-right: 10px;
+    }
+    &__title{
+      color: var(--tm, #7A1FC1);
+      font-size: 16px;
+    }
+    &__content{
+
+    }
+  }
+  &__zaloTxt{
+    color: var(--cam, #F78924);
+    @include font-size(20px);
+  }
+  &__form{
+    &__input{
+      font-size: 15px;
+      border-radius: 8px;
+    }
+    &__btn{
+      background: var(--cam, #F78924) !important;
+      @include font-size(20px);
+      text-transform: inherit;
+      border-radius: 8px;
+    }
+  }
+  &__location{
+    &__box{
+      padding-left: 100px;
+      position: relative;
+      &:before{
+        counter-increment: tenBatKy;
+        content: "0" counter(tenBatKy) ".";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: var(--cam, #F78924);
+        @include font-size(48px);
+        line-height: .45;
+        @extend .bungee-inline-regular;
+      }
+    }
+  }
+  &__coverImg1{
+    &:nth-child(1){
+      position: absolute;
+      top: 256px;
+      left: 0;
+    }
+    &:nth-child(2){
+      position: absolute;
+      top: 558px;
+      right: 0;
+    }
+    &:nth-child(3){
+
+    }
+  }
+  &__footer{
+    &__title{
+      font-size: 16px;
+      color: var(--cam, #F78924);
+    }
+  }
+  &__baogom{
+    &__section{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "";
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        right: -30%;
+        background: var(--cam-nhatj, #FFEDDD);
+      }
+    }
+    &__coverTop{
+      margin-top: -50px;
+      border-radius: 24px;
+    }
+    &__cover1{
+      margin-top: -60px;
+      margin-left: -100px;
+      border-radius: 24px;
+    }
+  }
+  &__dichvu{
+    &__section{
+      position: relative;
+      &:before{
+        content: "";
+        min-height: 557px;
+        width: 100vw;
+        background: var(--tm-nht, #F6EAFF);
+        position: absolute;
+        top: 0;
+        left: 30%;
+      }
+    }
+  }
+  &__khachhang{
+    &__section{
+      position: relative;
+      &:before{
+        content: "";
+        min-height: 550px;
+        width: 100vw;
+        background: var(--tm-nht, #F6EAFF);
+        position: absolute;
+        top: 0;
+        right: 30%;
+      }
+    }
+    &__title1{
+      color: var(--en, #2D2D2D);
+      @include font-size(48px);
+    }
+    &__card{
+
+    }
+    &__title{
+
+    }
+    &__txt{
+      font-size: 15px;
+    }
+    &__name{
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
+.bungee-inline-regular {
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

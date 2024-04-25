@@ -1,0 +1,47 @@
+.header{
+  &:not(.uk-navbar-transparent){
+    background: #fff;
+  }
+  &__item{
+    min-height: 65px;
+  }
+  &__hover{
+    color: #666;
+  }
+  &__active{
+    color: var(--cam, #F78924);
+    font-family: "Be Vietnam Bold", sans-serif;
+  }
+  &__btn{
+    text-transform: inherit;
+    border-color: #F78924;
+    font-size: 14px;
+    color: #F78924;
+  }
+  .uk-navbar-item,.uk-navbar-toggle{
+    @extend .header__item;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        @extend .header__item;
+        font-size: 15px;
+        text-transform: inherit;
+        color: #525252;
+        &[aria-expanded=true]{
+          @extend .header__hover;
+        }
+      }
+      &:hover{
+        >a{
+          @extend .header__hover;
+        }
+      }
+      &.uk-active{
+        >a{
+          @extend .header__active;
+        }
+      }
+    }
+  }
+}
